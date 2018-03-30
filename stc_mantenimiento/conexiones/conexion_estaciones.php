@@ -11,7 +11,7 @@
 	$resultadoEsta = $conexion->query($queryEsta);
 
 	//Se instancia una varible con contenido HTML.
-	$html .= "<option value='0' selected disabled='true'>-Selecione Estación-</option>";
+	$html .= "<option value='' selected disabled='true'>-Selecione Estación-</option>";
 
 	//Mientras la variable "$rowEsta" sea igual a la variable "$resultadoEsta",
 	//Obtiene una fila de resultado como un array asociativo.

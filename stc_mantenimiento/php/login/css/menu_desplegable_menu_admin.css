@@ -1,0 +1,102 @@
+
+    
+#menu-bar{
+	display: none;
+}
+
+
+div label{ /*POSICIÓN DEL ICONO MENÚ*/
+	float: left;
+	margin: 1vw 0vh;/*Posición arriba-abajo y derecha-izquierda*/
+	cursor: pointer;
+position: absolute;
+}
+
+img#img_menu{/*ICONO MENÚ*/
+	float: left;
+	width: 3vw;
+	height: 3vw;
+	margin-top: 18%; 
+	margin-left: 5%;
+position: absolute;
+}
+
+.menu{/*MENÚ DESPLEGABLE IZQUIERDO*/
+	margin-top: 5vw;
+	margin-left: -1vw;
+	width: 15vw;
+	height: 8.2vw;
+	transition: all 0.5s;
+	transform: translate(-100%);
+	line-height: 100%;
+    position: absolute;
+}
+
+.menu ul{
+    flex-direction: column;
+}
+
+img#home-icon{/*ICONO HOME*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -45.5%;
+	position: absolute;
+	margin-top: -4%;
+}
+
+img#about-icon{/*ICONO ABOUT*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -25.5%;
+	position: absolute;
+	margin-top: -4.5%;
+
+}
+
+img#logout-icon{/*ICONO LOGOUT*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -31.7%;
+	position: absolute;
+	margin-top: -4.5%;
+}
+
+.menu li a{/*TEXTO DEL MENÚ DESPLEGABLE*/
+	display: inline-block;
+	font-size: 1.1vw;
+	font-family: sans-serif;
+	text-align: center;
+	text-decoration: none;
+	padding: 1.9vh 0.5vw;
+	margin-top: 1.7%;
+    margin-bottom: 1.8%;
+	line-height: 1vw;
+	height: 1vw;
+	margin-left: 5vw;
+-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
+    
+    }
+
+.menu li a:hover{
+	 color: #f56f3a;
+}
+
+.menu li{
+text-align: center;	
+margin-left: -2vw;/*Para que se adapte el menú*/
+border-bottom: 1px solid #C6D0DA;
+/*El color se pone en el li para que se adapte al menú*/
+background: white;
+}
+
+	#menu-bar:checked ~ .menu{
+transform:translate(0%);
+
+	}
+    
+

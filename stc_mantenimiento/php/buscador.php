@@ -1,22 +1,24 @@
 <?php  
 
 	//Incluye la conexión a la base de datos. (conexion_2)
-	require ('../conexiones/conexion_2.php');
+	require ('../conexiones/conexion_3.php');
 
 		//Se ejecuta la sentencia SQL a la BD de la tabla "manuales".
-		$selecciona = "SELECT * FROM manuales ORDER BY titulo ASC";
+		//$selecciona = "SELECT * FROM manuales ORDER BY titulo ASC";
+		$db = new Conexion();
+		$sql = $db->query("SELECT * FROM manuales");
 		/*BUSCA EN EL AREA ASIGNADA
 		$query = "SELECT * FROM manuales WHERE area = 'MC L-12'";*/
 		//Ejecuta el query "$selecciona", y almacena en la variable "$resultado", todo lo obtenido
-		$resultado=$conexion->query($selecciona);
+		//$resultado=$conexion->query($selecciona);
 		//Declaración de la variable "array"
 		$array = array();
 
 	//Si se obtiene un valor en la variable "$resultado"
-	if($resultado){
+	if($sql){
 		//Mientras la variable "$fila" sea igual a la variable "$resultado",
 		//Obtiene una fila de resultado como un array asociativo.
-		while ($fila = $resultado->fetch_assoc()) {
+		while ($fila = $sql->fetch_assoc()) {
 			echo mb_convert_encoding($fila['titulo'],'UTF-8'),'<br/>';
 			//Almacena en la variable "$titulo" el resultado obtenido por la variable "$fila", con un formato de codificion de caracteres.
 		  	$titulo = mb_convert_encoding($fila['titulo'],'UTF-8');
@@ -31,6 +33,15 @@
 
 
 <!DOCTYPE html>
+
+<?php
+session_start();
+if (@!$_SESSION['nom_administrador']) {
+  header("Location:login.php");
+}elseif ($_SESSION['rol']==2) {
+  header("Location:login/menu_user.php");
+}
+?>
 <html>
 <head>
 	<title>Buscador STC</title>
@@ -39,6 +50,26 @@
 	<!--Scripts de jquery y jquery-ui-->
 	<script src="../js/jquery-1.12.1.min.js"></script>
 	<script src="../js/jquery-ui.js"></script>
+
+</head>
+<body>
+		<!--Salto de linea-->
+		</br>
+		<!--Formulario-->
+		<form action="buscador.php" method="POST">
+			<!--Captura de texto a buscar-->
+			<input type="text" name="buscar" id="buscar" value="" placeholder="Buscar..." maxlength="30" autocomplete="off" required/>
+			<!--Botón-->
+			<input type="submit" value="Buscar" />
+		</form>
+		<!--Salto de linea-->
+		</br>
+	<div>
+		<a href="javascript:history.back().document.location.reload();">
+			<button type="button">Regresar</button>
+		</a>	
+	</div>
+</body>
 	<!--Script que ejecuta la función autocomplete (autocompletar)-->
 	<script>
 			//Ejecuta la función una vez cargada la página web (DOM-Document Object Model, Modelo de Objeto de Documento).
@@ -53,25 +84,11 @@
 			});
 		});
 	</script>
-</head>
-<body>
-		<!--Salto de linea-->
-		</br>
-		<!--Formulario-->
-		<form action="buscador.php" method="POST">
-			<!--Captura de texto a buscar-->
-			<input type="text" name="buscar" id="buscar" value="" placeholder="Buscar..." maxlength="30" autocomplete="off" required/>
-			<!--Botón-->
-			<input type="submit" value="Buscar" />
-		</form>
-		<!--Salto de linea-->
-		</br>
-</body>
 </html>
 
 <?php
 	//Incluye la conexión a la base de datos. (conexion_3)
-	require ('../conexiones/conexion_3.php');
+	//require ('../conexiones/conexion_3.php');
 	//Se recorre lo que es mandado desde el form
 	if (isset($_POST['buscar'])) {
 		//Se instancia la conexion con la base de datos
