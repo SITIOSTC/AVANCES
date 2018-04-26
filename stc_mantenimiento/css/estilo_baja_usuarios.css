@@ -1,0 +1,638 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+/*-----------------------------BANNER--------------------*/
+div#main_header{
+width: 105%;
+height: 12vw;
+background: #FF9100;
+}
+
+img#logo-cdmx{
+float: left;
+width: 18%;
+height: 6%;
+margin-top: 2%;
+margin-left: 2%;
+}
+
+img#logo-metro{
+float: left;
+width: 22%;
+height: 10%;
+margin-top: 2%;
+margin-left: 0%;
+
+}
+
+div#titulo_banner_uno{/**/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*TEXTO COLOR BLANCO*/
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 42%;
+	font-size: 4vw;
+	 font-family: sans-serif;
+	font-weight: bolder; 
+	text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.3);
+}
+
+
+div#texto_banner{/**/
+	float: right;
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 75%;
+	font-size: 0.9vw;
+	font-family: sans-serif;
+}
+
+/*-----------------------------------------PÁGINA MENÚ ADMIN-----------------------------------------------------------------------------------*/
+
+/*DIV CONTENEDOR DE TODOS LOS MENÚS EN EL HEADER*/
+div#admin{ 
+	width: 105%;
+	height: 5vw;
+	background: #FFA726;
+    margin-top: -4.2%;
+	position: sticky;/*sirve para que sea responsive el menù---*/
+    z-index: 9;
+}
+
+/*CONTENEDOR DEL MENÚ DESPLEGABLE*/
+.contenedor{ 
+	width: 98%;
+	margin: auto;
+	position: sticky;
+    
+}
+
+/*DIV DEL MENÚ HEADER Y DESPLEGABLE*/
+div#admin .contenedor{
+	display: table;
+	list-style: none;
+   
+}
+
+/*NAV DEL MENÚ HEADER*/
+#menu_admin{
+	float: left;
+	line-height: 100vh;
+margin-left: 40%; 
+margin-top: 5%;
+       
+}
+
+/*TEXTO DEL NAV DEL MENÚ HEADER*/
+ #menu_admin a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 1.3vh 1vw;/*alto y ancho del color del efecto hover sobre los títulos
+	y submenús*/
+	font-weight: bold;
+	text-align: center;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
+}
+
+/*TÍTULO DE LOS MENÚS*/
+
+#personal a { 
+line-height: 130%;/*Altura del color hover sobre el título*/
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-size: 1.3vw;   
+}
+
+#manuales a{ 
+line-height: 130%;/*Altura del color hover sobre el título*/
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-size: 1.3vw;  
+     
+}
+
+#registros a{ 
+line-height: 130%;/*Altura del color hover sobre el título*/
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+font-size: 1.3vw;  
+}
+
+/*TEXTO DE LAS OPCIONES DE LOS SUBMENÚS*/
+
+#submenu_personal a{/*letras del submenú*/
+bottom: 2%;
+font-size: 1.3vw;
+line-height: normal;
+font-family:  Arial, Helvetica, sans-serif; 
+font-weight: 100;
+border-bottom: 1px solid #EBEBEB;
+}
+
+#submenu_manuales a{/*letras del submenú*/
+bottom: 2%;
+font-size: 1.3vw;
+line-height: normal;
+font-family:  Arial, Helvetica, sans-serif; 
+font-weight: 100;
+border-bottom: 1px solid #EBEBEB; 
+  
+}
+
+#submenu_registros a{
+bottom: 2%;
+font-size: 1.3vw;
+line-height: normal;/*Separación entre cada línea de texto en los submenús*/
+font-family:  Arial, Helvetica, sans-serif; 
+font-weight: 100;
+border-bottom: 1px solid #EBEBEB;    
+}
+
+/*TAMAÑO DE LOS SUBMENÚS*/
+
+#submenu_personal{
+	width: 14vw;
+   height: 12.1vh;/*la altura que abarca el color de fondo del submenú */
+margin-left: -40%;    
+}
+
+#submenu_manuales {/*segundo submenú*/
+   margin-left: -48%;
+      
+     
+}
+
+#submenu_manuales ul li ul{/*segundo submenú*/
+	width: 8vw;
+   height: 24.5vh;
+   margin-left: -31%;
+   
+}
+
+#submenu_manuales ul{/*tercer submenú*/
+	width: 9vw;
+   height: 27.8vh;/*la altura que abarca el color de fondo del submenú */
+   margin-left: 12.6%; /*Separación entre el segundo submenú Manuales*/
+   font-family: "Times New Roman", Times, serif;
+position: absolute;
+left: 14.1vw;/*Separación entre el 2do y 3er submenú Manuales*/
+    
+}
+
+
+#submenu_registros{
+	width: 14vw;
+   height: 12.6vh;/*la altura que abarca el color de fondo del submenú */
+    margin-left: -40%;
+}
+
+
+
+/*PROPIEDADES EN GENERAL*/
+#submenu_personal a:hover{
+    background: #f56f3a;
+    border-radius: 0px; 
+    color: white;
+}
+
+#submenu_manuales a:hover{
+    background: #f56f3a;
+    border-radius: 0px; 
+    color: white;
+    
+}
+
+#submenu_registros a:hover{
+    background: #f56f3a;
+    border-radius: 0px; 
+    color: white;
+}
+
+#personal :hover{
+     color: #f56f3a;
+}
+
+#manuales :hover{
+     color: #f56f3a;
+     
+}
+
+#registros :hover{
+     color: #f56f3a;
+}
+ul li ul{ 
+	
+	display: none;
+	position: absolute;
+	width: 16vw;/*Anchura del segundo submenú de Manuales*/
+     
+}
+
+
+ul li:hover>ul{
+	display: block;
+
+}
+
+ul li ul li{
+	position: relative;
+ background: #FFA726;/*Color de fondo de los submenús*/
+   
+}
+
+ul li ul li ul{
+	left: 192px;
+	top: 0px;
+    
+}
+
+/*ICONO DE CADA MENÚ*/
+img#personal-icon{
+	float: left;
+	width: 3vw;
+	height: 2.5vw;
+	position: absolute;
+margin-left: -1.5vw;
+	margin-top:-0.5vw;
+}
+
+img#manuales-icon{
+	float: left;
+	width: 3vw;
+	height: 2.5vw;
+	position: absolute;
+margin-left: -1.5vw;
+	margin-top: -0.5vw;
+
+}
+
+
+img#registros-icon{
+	float: left;
+	width: 3vw;
+	height: 2.5vw;
+	position: absolute;
+    margin-left: -1.5vw;
+	margin-top: -0.5vw;
+
+}
+
+/*PARA MOVER CADA MENÚ DE LUGAR (CON TODO Y SUBMENÚS)*/
+#personal{
+float: left;
+margin-left: -20%;
+position: absolute;
+bottom: 1.5%;
+
+}
+
+#manuales{
+float: left;
+margin-left: 7.3%;
+position: absolute;
+bottom: 1.5%;
+ 
+}
+
+#registros{
+float: left;
+margin-left: 35%;
+position: absolute;
+bottom: 1.5%;
+}
+
+ul{
+list-style: none;	
+    
+}
+
+ul li#personal a, ul li#manuales a, ul li#registros a{
+	display: block;
+	text-decoration: none;
+     
+    
+}
+
+
+
+/*----------------body--------------------------------------------*/
+
+/*PROPIEDADES DEL BODY DEL SITIO WEB*/
+
+body{
+	/*margin: auto;
+	margin-top: 0%;
+	width: 100%;
+	height: 140vh;*/
+background: #E6E6E6;
+   
+
+
+/*IMAGEN DE FONDO EN EL SITIO WEB*/
+/*
+ background-image: url(../imagenes/imagen_fondo.png);
+ background-repeat: no-repeat;
+ background-size: 104vw 200vh;
+ background-position: -3vw 8vh;
+   
+ /*background-position: 54% 35%; 
+*/
+}
+
+/*EFECTO HOVER EN EL BODY DEL SITIO WEB*/
+
+div#body:hover {
+
+}
+/*-----------------------Tabla Baja Usuarios---------------------------*/
+div#tabla_elimna_registros{
+    margin: 15% auto;
+    position: absolute;
+    margin-left: 0.1%;
+    width: 100%;
+    margin-bottom:  auto;
+    margin-top: 0.7%;
+}
+
+table{
+    background-color: white;
+    text-align: center;
+    width: 105%;
+    border-collapse:collapse; /*quita los bordes que vienen por defecto*/
+}
+
+caption{
+   background-color: #A85645;
+    border-bottom: solid 1.5px #0F362D;
+    color: white;
+    height: 7vh;
+    font-size: 1.4vw;
+   text-align: center;
+    padding-top: 2%;
+}
+
+th{  
+font-size: 1.1vw;
+  overflow: hidden;
+    word-wrap: break-word;    
+}
+
+th, td{
+    text-align: center;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+td{
+    font-size: 1vw;
+    text-align: center;
+    /*para que no se salga el texto de las celdas, se usan las 3 
+    líneas de abajo*/
+  overflow: hidden;
+    width: 655px;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+}
+
+td#est, #ar, #lin{
+    font-size: 0.8vw;
+    text-align: center;
+    width: 10px;
+}
+thead, th{
+    background-color: #A85645;
+    border-bottom: solid 3px #0F362D;
+    color: white;
+}
+
+
+tr:nth-child(even){ /*Se usa el evento even, porque escoge
+    solo los hijos par para colorearlos*/
+    background-color: #ddd;
+}
+
+
+
+/*Botones actualizar y eliminar*/
+button{
+    float: center;
+    width: 5.5vw;
+    height: 5vh;
+    font-size: 0.9vw;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+}
+
+/*----------------FOOTER----------------------------------------------------------------*/
+
+/*PROPIEDADES DEL FOOTER DEL SITIO WEB*/
+
+div#footer{
+	width: 100%;/*ANCHO DE LA PÁGINA*/
+	height: 11vw;/*ALTO*/
+	background: #47484B;/*COLOR DE FONDO*/
+    /* position: absolute;
+    margin-top: 1.5%;
+    margin-left: -3.5%;
+    z-index: 9;*/
+}
+
+
+    hr{
+    position: absolute;
+    margin-left: 68%;
+    height: 11vw;
+    border: 0.1vh  solid;
+    color: #808080;    
+}
+
+    hr#hr_2{
+    position: absolute;
+    margin-left: 25%;
+    height: 11vw;
+    border: 0.1vh  solid;
+    color: #808080;
+}
+
+img#logo-metro_2{
+float: left;
+width: 22%;
+height: 10%;
+margin-top: 1%;
+margin-left: 5%;
+}
+
+div#sitio_oficial{
+	float: left;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	margin-top: 7%;
+margin-left: 7%;
+ font-size: 1vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 120%;
+    text-decoration:none;
+    }
+
+div#link_oficial a{
+    float: left;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-top: 9%;
+margin-left: -23%;
+ font-size: 0.9vw;
+ position: absolute;
+   font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+    text-decoration:underline;
+    }
+
+div#link_oficial a:hover{
+   color: #f56f3a;
+}
+
+/*LOGO DE MANDO CENTRALIZADO*/
+
+img#mc{
+	float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: 1.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 5%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+    width: 8.7%;
+	height: 10%;
+}
+
+
+/*DIRECCIÓN DEL PCL, EN EL FOOTER*/
+
+div#direccion{
+	float: left;
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-top: 4%;
+	margin-left: 45%;
+	position: absolute;
+	font-size: 0.9vw;
+    font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+      
+}
+
+
+
+div#contacto{
+	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	margin-left: 81.7%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 1%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 1vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 140%;
+    text-decoration:none;
+    }
+
+div#correo{
+    	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-left: 86%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 3.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 0.9vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+	
+    }
+
+img#email-icon{
+	float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: -6.7%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 83.4%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+	height: 2%;
+	width: 2%;
+}
+
+/*TELÉFONO DEL PCL*/
+
+img#phone-icon{
+    float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: -6.7%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 70.3%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+	height: 2%;
+	width: 2%;
+}
+
+div#telefono{
+	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-left: 73%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 3.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 0.9vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+    line-height: 140%;
+    
+    }
+
+div#desarrolladores{
+	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	margin-left: 78%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 7%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 1vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 140%;
+    text-decoration:none;
+    }
+
+
+div#correo_2{
+    	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-left: 78.6%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 8.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 0.9vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+	
+    }
+
+img#email-icon_2{
+	float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: -1.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 75.5%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+	height: 2%;
+	width: 2%;
+   
+}
+/*NOTAS PENDIENTES*/
+/*HACER QUE NO SE MUEVA EL FOOTER DE SU LUGAR--YA*/
+/*HACER RESPONSIVE EL SITIO PARA QUE NO SE MUEVA EL CONTENIDO--
+FALTA EL HOVER DE LOS TÍTULOS QUE SEA RESPONSIVE*/
+/*INVESTIGAR COMO CARGAR CONTENIDO SIN RECARGAR LA PÁGINA*/
+/*CHECAR QUE MÁS SE AGREGARÁ A LA PÁGINA PARA QUE NO SE VEA TAN VACÍA*/

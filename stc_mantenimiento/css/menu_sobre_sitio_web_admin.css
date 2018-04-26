@@ -1,0 +1,134 @@
+   
+#menu-bar{
+	display: none;
+   
+}
+
+
+div label{ /*POSICIÓN DEL ICONO MENÚ*/
+	float: right;
+	right: 4% ;  /*derecha-izquierda*/
+    margin: 0.6vw; /*Posición arriba-abajo*/
+	cursor: pointer;
+position: absolute;
+}
+
+img#img_menu{/*ICONOS MENÚ*/
+	float: right;
+	width: 3vw;
+	height: 3vw;
+	margin-top: 13%; 
+	margin-left: 5%;
+position: absolute;
+}
+
+.menu{/*MENÚ DESPLEGABLE IZQUIERDO*/
+	margin-top: 4.1vw;
+	margin-left: 2.6vw;
+	width: 15vw;
+	transform: translate(-120%); /*Aparecer y desaparecer el menú*/
+	line-height: 3vw;
+    position: absolute;
+}
+
+.menu ul{
+    flex-direction: column;
+    
+}
+
+img#home-icon3{/*ICONO HOME*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -52%;
+	position: absolute;
+	margin-top: -4%;
+}
+
+img#personal-icon{/*ICONO HOME*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -45.5%;
+	position: absolute;
+	margin-top: -4%;
+}
+
+img#manuales-icon{/*ICONO ABOUT*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -45.5%;
+	position: absolute;
+	margin-top: -5.6%;
+
+}
+
+img#registros-icon{/*ICONO LOGOUT*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -45.5%;
+	position: absolute;
+	margin-top: -4.5%;
+}
+
+img#config-icon2{/*ICONO ABOUT*/
+	float: left;
+	width: 2.4vw;
+	height: 2.4vw;
+	margin-left: -39.5%;
+	position: absolute;
+	margin-top: -4.5%;
+
+}
+
+img#logout-icon2{/*ICONO LOGOUT*/
+	float: left;
+	width: 2.7vw;
+	height: 2.6vw;
+	margin-left: -40.5%;
+	position: absolute;
+	margin-top: -4.9%;
+}
+
+.menu li a{/*TEXTO DEL MENÚ DESPLEGABLE*/
+	display: inline-block;
+    color: black;
+	font-size: 1.1vw;
+	font-family: sans-serif;
+	text-align: center;
+	text-decoration: none;
+	padding: 1.9vh 0.5vw;
+	margin-top: 1.7%;
+    margin-bottom: 1.8%;
+	line-height: 1vw;
+	height: 1vw;
+	margin-left: 5vw;
+-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
+    
+    }
+
+.menu :hover{
+    background: #FF9100;
+    border-radius: 0px; 
+    color: white;
+}
+
+.menu li{
+text-align: center;	
+margin-left: -2vw;/*Para que se adapte el menú*/
+border-bottom: 1px solid #C6D0DA;
+/*El color se pone en el li para que se adapte al menú*/
+background: #F5F5F5;
+}
+
+	#menu-bar:checked ~ .menu{
+transform:translate(500%); /*Posicionar de izquierda-derecha el menú que desaparece */
+       
+
+	}
+    
+

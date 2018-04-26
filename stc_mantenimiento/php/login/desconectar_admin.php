@@ -2,9 +2,9 @@
 session_start();
 if($_SESSION['nom_administrador']){	
 	session_destroy();
-	header("location:../login.php");
+	header("location:../../index.php");
 }
 else{
-	header("location:../login.php");
+	header("location:../../index.php");
 }
 ?>

@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+input {
+    
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 1vw;
+	line-height: 1vw;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+p#parrafos {
+	line-height: 1vw;
+    
+}
+
+.clearfix { *zoom: 1; } /* For IE 6/7 */
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+/* ---------- LOGIN ---------- */
+
+#login {
+    
+    float: right;
+	margin-top: 7%;
+    margin-right: 0%; /*Para quitar espacio muerto a la derecha del sitio*/
+	width: 30vw;
+}
+
+#login form span {/*APARTADOS CON ICONO DE CADA INPUT*/
+    
+	background-color: #fff59d;
+	border-radius: 3% 0% 0% 3%;
+	-moz-border-radius: 3% 0% 0% 3%; 
+	-webkit-border-radius: 3% 0% 0% 3%;
+	color: #606468;
+	display: block;
+	float: left;
+	height: 2.20vw;
+	line-height: 2.3vw; /*CENTRAR LOS ICONOS DENTRO DE LOS APARTADOS*/
+	text-align: center;
+	width: 5vw;
+    margin-left: 20.5%;
+    margin-top: 1%;
+    
+}
+
+
+
+#login form input { /*INPUT*/
+	height: 2.20vw;
+    margin-left: 0%;
+    margin-top: 1%;
+}
+
+#login form input[type="text"], input[type="password"] {
+	background-color: #FFF;
+	border-radius: 0% 3% 3% 0%;
+	-moz-border-radius: 0% 3% 3% 0%;
+	-webkit-border-radius: 0% 3% 3% 0%;
+	color: #606468;
+	margin-bottom: 0.1%;
+	padding: 0 6%;
+	width: 15vw;
+ 
+}
+
+#login form input[type="submit"] {
+	border-radius: 3%;
+	-moz-border-radius: 3%;
+	-webkit-border-radius: 3%;
+	background-color: #fff59d;
+	color: BLACK;
+	font-weight: 400;
+	margin-bottom: 2%;
+	text-transform: uppercase;
+	width: 9vw;
+    height: 1.8vw;
+    margin-left: 39%;
+    margin-top: 1%;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #fff176;
+    cursor: pointer;
+}
+
+#login > p#parrafos {
+	text-align: center;
+        
+}
+
+#login > p#parrafos span {
+	padding-left: 5%;
+        
+}

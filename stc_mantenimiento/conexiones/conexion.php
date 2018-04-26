@@ -1,6 +1,6 @@
 	<?php
 
-$host="127.0.0.1";
+$host="localhost";
 $basedatos="bd_stc_pcl";
 $user="root";
 $pass="gears_of-war-3";

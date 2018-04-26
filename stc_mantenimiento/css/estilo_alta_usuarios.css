@@ -1,0 +1,265 @@
+/*---------------------Formulario 1----------------------------*/
+
+.wrap {
+  width: 90%;       
+  height: 42vw;    
+  max-width: 45%;   
+  padding: -40%;    
+  margin: auto;
+  background: #fff; 
+    margin-bottom: 0%;
+  margin-top: -2.7%;/*subir o bajar el formulario completo*/  
+  box-shadow: 0px 0px 3px grey; }
+
+div#titulo_form{
+    float: center;
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #B6B6B6;/*COLOR BLANCO*/
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 15%;
+	font-size: 1.6vw;
+}
+
+.registro {
+    
+  width: 100%;
+  color: #f2f2f2;
+  margin-top: -2%;
+  margin-left: -23%; /*Mover izquierda-derecha el formulario completo*/ 
+  padding: -30%; }
+
+.registro .formulario {
+
+  width: 100%;
+  margin: auto; }
+
+.registro .formulario .input-group {
+ position: relative;
+ margin-left: 15%; 
+ margin-top: 9%; /*Subir o bajar input completos*/
+ margin-bottom: 10%; }
+     
+      .registro .formulario .input-group input[type="text"], /*no. de expediente*/
+      .registro .formulario .input-group input[type="text"], /*nombre*/
+      .registro .formulario .input-group input[type="text"], /*apellidos*/
+      .registro .formulario .input-group input[type="text"]{ /*categoria*/   
+        font-family: "Roboto";
+        font-size: 1.4vw;
+        color: #B6B6B6; /*color de letra al escribir*/
+        width: 85%;
+        margin-left: -1%;  
+        outline: none;
+        padding: -23%;
+        background: none;
+        border: none;
+        margin-top: -10%;
+        line-height: 5%;
+        margin-bottom: 2%;
+        border-bottom: 2px solid #ffcc80; } /*Campos ya llenados o estáticos*/
+       
+        .registro .formulario .input-group input[type="text"]:focus, /*no. de expediente*/
+        .registro .formulario .input-group input[type="text"]:active, /*no. de expediente*/
+        .registro .formulario .input-group input[type="text"]:focus, /*nombre*/
+        .registro .formulario .input-group input[type="text"]:active, /*nombre*/
+        .registro .formulario .input-group input[type="text"]:focus, /*apellidos*/
+        .registro .formulario .input-group input[type="text"]:active, /*apellidos*/
+        .registro .formulario .input-group input[type="text"]:focus, /*categoria*/
+        .registro .formulario .input-group input[type="text"]:active{ /*categoria*/
+          outline: none;
+          border-bottom: 2px solid #ff9800;} /*Campos activos*/
+       
+         .registro .formulario .input-group input[type="text"].error, /*no. de expediente*/
+         .registro .formulario .input-group input[type="text"].error, /*nombre*/
+         .registro .formulario .input-group input[type="text"].error, /*apellidos*/
+         .registro .formulario .input-group input[type="text"].error{ /*categoria*/
+          border-bottom: 2px solid #D32F2F; } /*Campos sin llenar*/
+         
+          .registro .formulario .input-group input[type="text"].error + label,  /*no. de expediente*/
+          .registro .formulario .input-group input[type="text"].error + label,  /*nombre*/
+          .registro .formulario .input-group input[type="text"].error + label,  /*apellidos*/
+          .registro .formulario .input-group input[type="text"].error + label{ /*categoria*/
+          color: #B6B6B6;} /*Títulos de cada campo cuando ya tuvieron clic*/
+          
+          .registro .formulario .input-group label {
+          color: #B6B6B6;} /*Títulos estáticos iniciales*/
+        
+          .registro .formulario .input-group label.label {
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          margin-left: 4%;
+          font-size: 1.4vw;
+          line-height: 15%;
+          position: absolute;
+          top: -13%;
+          left: 0; }
+          
+          .registro .formulario .input-group label.label.active {
+            top: -99%;
+            font-size: 1vw;
+            line-height: 18%;
+            color: #B6B6B6; } /*Título de los campos, cuando están activos*/
+ 
+/*SELECT*/    
+      
+.registro .formulario .select  {
+      background:  #43a047;
+      border-radius: 1%;
+      border: 2px solid #f2f2f2;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Roboto";
+      font-size: 1.5vw;
+      padding: 1%;
+      width: 73%;
+      margin-left: 14%;
+      margin-top:  -10%;
+      margin-bottom: 0%;
+   
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .registro .formulario .select:hover {
+       background:  #66bb6a; }
+
+/*---------------------Formulario 2----------------------------*/
+
+.wrap2 {
+  width: 90%;
+  height: 42vw;    
+  max-width: 100%;   
+  padding: -40%;    
+  margin: auto;
+  background: #fff;  
+  margin-top: -102.9%;/*subir o bajar el formulario completo*/
+  margin-left: 110%; 
+  box-shadow: 0px 0px 3px grey; }
+
+.registro2 {
+  width: 100%;
+  color: #f2f2f2;
+  margin-top: -2%;
+  margin-left: -25%;     
+  padding: -30%; }
+
+  .registro2  {
+    width: 100%;
+    margin: auto; }
+
+    .registro2 .input-group2  {
+      position: relative;
+      margin-left: 15%;
+      margin-top: 7%;
+      top: 15%;/*subir o bajar los input completos*/
+      margin-bottom: 11.3%; /*Separación entre cada línea de los input*/ }
+
+      .registro .formulario .input-group2 input[type="e-mail"], /*correo*/
+      .registro .formulario .input-group2 input[type="text"], /*nombre de usuario*/
+      .registro .formulario .input-group2 input[type="password"], /*contraseña*/
+      .registro .formulario .input-group2 input[type="password"] { /*confirmar contraseña*/     
+       font-family: "Roboto";
+        font-size: 1.4vw;
+        color: #B6B6B6; /*color de letra al escribir*/
+        width: 85%;
+        margin-left: -1%;  
+        outline: none;
+        padding: -23%;
+        background: none;
+        border: none;
+        margin-top: -10%;
+        line-height: 5%;
+        margin-bottom: 2%;
+        border-bottom: 2px solid #ffcc80; } /*Campos ya llenados o estáticos*/
+       
+        .registro .formulario .input-group2 input[type="e-mail"]:focus, /*correo*/
+        .registro .formulario .input-group2 input[type="e-mail"]:active, /*correo*/
+        .registro .formulario .input-group2 input[type="text"]:focus, /*nombre de usuario*/
+        .registro .formulario .input-group2 input[type="text"]:active, /*nombre de usuario*/
+        .registro .formulario .input-group2 input[type="password"]:focus, /*contraseña*/
+        .registro .formulario .input-group2 input[type="password"]:active, /*contraseña*/
+        .registro .formulario .input-group2 input[type="password"]:focus, /*confirmar contraseña*/
+        .registro .formulario .input-group2 input[type="password"]:active{ /*confirmar contraseña*/
+          outline: none;
+          border-bottom: 2px solid #ff9800;} /*Campos activos*/
+       
+        .registro .formulario .input-group2 input[type="e-mail"].error, /*correo*/
+        .registro .formulario .input-group2 input[type="text"].error, /*nombre de usuario*/
+        .registro .formulario .input-group2 input[type="password"].error,  /*contraseña*/
+        .registro .formulario .input-group2 input[type="password"].error{ /*confirmar contraseña*/
+          border-bottom: 2px solid #D32F2F; } /*Campos sin llenar*/
+         
+       
+          .registro .formulario .input-group2 input[type="e-mail"].error + label, /*correo*/
+          .registro .formulario .input-group2 input[type="text"].error + label,  /*nombre de usuario*/
+          .registro .formulario .input-group2 input[type="password"].error + label,  /*contraseña*/
+          .registro .formulario .input-group2 input[type="password"].error + label{ /*confirmar contraseña*/
+          color: #B6B6B6;} /*Títulos de cada campo cuando ya tuvieron clic*/
+      
+          .registro2  .input-group2 label {
+          color: #B6B6B6;} /*Títulos estáticos iniciales*/
+        
+          .registro2 .input-group2 label.label {
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          margin-left: 4%;
+          font-size: 1.4vw;
+          line-height: 15%;
+          position: absolute;
+          top: -13%;
+          left: 0; }
+          
+          .registro2  .input-group2 label.label.active {
+            top: -99%;
+            font-size: 1vw;
+            line-height: 18%;
+            color: #B6B6B6; } /*Título de los campos, cuando están activos*/
+ 
+
+/*Botones*/
+    .registro2 input[type="submit"] {
+      background: #43a047;
+      border-radius: 1%;
+      border: 2px solid #f2f2f2;
+      color: #fff;
+     cursor: pointer;
+      display: inline-block;
+      font-family: "Roboto";
+      font-size: 1.5vw;
+      padding: 1%;
+      width: 33%;
+      margin-left: 34%;
+      margin-top:  -10%;
+      margin-bottom: 1%;
+      
+        
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .registro2 input[type="submit"]:hover {
+       background:  #66bb6a; }
+
+   .registro2   button[type="button"] {
+      background: #43a047;
+      border-radius: 1%;
+      border: 2px solid #f2f2f2;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Roboto";
+      font-size: 1.5vw;
+      padding: 1%;
+      width: 33%;
+      margin-left: 34%;
+      margin-top:  -10%;
+      margin-bottom: 1%; 
+       
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .registro2   button[type="button"]:hover {
+       background: #66bb6a; }
+
+

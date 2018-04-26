@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>PCL L-12 Usuario: Inicio</title><!-- TÍTULO DE LA PÁGINA WEB  -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> <!-- PARA VISUALIZAR CARACTERES  -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../../css/estilo_home_user.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/menu_home_user.css"/>
+	<link rel="stylesheet" href="../../css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/main.js"></script>
+     <!-- PARA LLAMAR A LA HOJA DE ESTILOS  -->
+    </head><!--TERMINA EL HEAD   -->
+
+
+
+<!--  ..............................BODY, HEADER Y MENÚS.............................................  -->
+<body><!-- COMIENZA EL BODY  -->
+ 
+
+<div id="main_header"> <!-- COMIENZA EL HEADER  -->
+      <div id="banner"> 
+        <img src="../../imagenes/Logo_cdmx.png" id="logo-cdmx">
+        <img src="../../imagenes/Logo_metro.png" id="logo-metro">
+</div>
+
+<div id="titulo_banner_uno"> 
+     PCL L-12
+</div>
+
+
+<div id="texto_banner">
+        <P>SISTEMA DE TRANSPORTE COLECTIVO METRO
+                     <br>
+Gerencia de Instalaciones Fijas
+                       <br>
+       Subgerencia de Instalaciones Electrónicas
+                         <br>
+      Coordinación de Automatización y Control
+                        <br>
+        Jefatura de Sección de Mando Centralizado Línea 12                                 
+
+  </P></div>
+
+
+ </div><!-- TERMINA EL HEADER  -->
+
+
+
+
+
+<div id="home">
+
+<!--................................MENÚ DESPLEGABLE............................................-->
+  <div class="contenedor">
+    <input type="checkbox" id="menu-bar">
+    <label class="icon-menu" for="menu-bar"> 
+	  <img onmouseout="this.src='../../imagenes/menu-icon4.png';" onmouseover="this.src='../../imagenes/menu-icon2.png';" src="../../imagenes/menu-icon4.png" id="img_menu"/></label> <!--Para cambiar de imagen al 
+	  pasar el mouse-->
+
+    <nav class="menu">
+       
+       
+       <li id="manuales"><a href=""> <img src="../../imagenes/manuales-icon.png" id="manuales-icon">Manuales</a></li>
+       
+       <li id="config"><a href=""> <img src="../../imagenes/config-icon2.png" id="config-icon2">Configuración</a></li>
+       
+       <li id="info"> <a href="sobre_sitio_web_user.html"><img src="../../imagenes/about-icon2.png" id="about-icon2">Sobre el sitio web</a></li> 
+       
+       <li id="cerrar"><a  href="../login/desconectar_usuario.php"> <img src="../../imagenes/logout-icon2.png" id="logout-icon2">Cerrar sesión</a></li>
+
+                </nav>
+  </div>
+
+
+
+	<nav id="menu_home">
+		 <a id="user" href="menu_user.php">Usuario</a>
+		<a id="welcome" href="">¡Bienvenido!</a>
+	</nav>
+</div>	
+<!--................................ESTILOS BODY..................................................-->
+
+
+
+
+	
+
+<div id="body">
+
+    <div id="informacion">
+
+       <p id="titulo">Inicio </p>
+       <img src="../../imagenes/red.png"  id="red"/>
+</div>    
+    
+<!-----------------------------SLIDER------------------------------>
+      <div class="flexslider">
+		<ul class="slides">
+
+			<li>
+				<img src="../../imagenes/slider/1.png" alt="">
+				<section class="caption">
+					<h2>    </h2>
+				</section>
+			</li>
+
+			<li>
+				<img src="../../imagenes/slider/2.png" alt="">
+				<section class="caption">
+					<h2>     </h2>
+				</section>
+			</li>
+
+			<li>
+				<img src="../../imagenes/slider/3.png" alt="">
+				<section class="caption">
+					<h2>   </h2>
+				</section>
+			</li>
+
+		</ul>
+	</div>
+</div> <!--CIERRA DIV "BODY" -->
+
+
+<!-- ................................ESTILOS FOOTER..............................................  -->
+
+	<div id="footer"><!-- PARA DARLE ESTILO AL FOOTER  -->
+  
+	  <hr id="hr_2">
+	 
+	  <hr>
+	  
+	  <hr id="hr_3">
+	  
+	  <div id="logo_metrofooter">
+	     <img src="../../imagenes/Logo_metro.png" id="logo-metro_2">
+  </div>
+	     <div id="sitio_oficial">
+           <p>
+               SITIO OFICIAL
+           </p>
+       </div>
+       
+	   <div id="link_oficial"> 
+            <a id="oficial" href=" http://www.metro.cdmx.gob.mx/">
+            http://www.metro.cdmx.gob.mx/</a>                     
+        </div>
+  
+	  <div id="logo_mc" ><!-- DARLE ESTILO AL LOGO DE MANDO CENTRALIZADO  -->
+		<img src="../../imagenes/Logo_MC.png" id="mc">
+</div><!-- CIERRA LOGO_MC  -->
+    
+		<div id="direccion"> <!-- DIRECCIÓN EN EL FOOTER  -->
+          <p> <!-- PARRAFO  -->     ESTACIÓN TLÁHUAC, PCL
+           <br> <br>
+           San Rafael Atlixco núm 34. Edif. PCL P.B
+            <br>
+         Col. San Francisco Tlaltenco
+           <br>
+        C.P. 13400, Del. Tláhuac        
+
+         </p><!-- CIERRA EL PARRAFO  -->
+</div><!-- CIERRA EL DIV DIRECCIÓN  -->
+  
+      
+       <div id="contacto">
+           <p>
+              MC
+           </p>
+       </div>
+       
+        <div id="phone" >
+		<img src="../../imagenes/phone-icon.png" id="phone-icon">
+</div>
+       
+        <div id="telefono"> <!-- TELÉFONO EN EL FOOTER  -->
+            <p>  Tel: 57091133
+           <br><!-- SALTO DE LÍNEA  -->
+           Ext. 6875 y 6806
+              </p>
+</div><!--CIERRA EL DIV TELÉFONO   -->
+
+      <div id="correo-icon" >
+		<img src="../../imagenes/email-icon.png" id="email-icon">
+</div>
+
+ <div id="correo"> 
+            <p>  Correo electrónico:
+            <br>
+            mc.linea12@gmail.com            
+     </p>            
+        </div>
+        
+        <div id="desarrolladores">
+           <p>
+               DESARROLLADORES
+           </p>
+       </div>
+       
+       <div id="correo_2"> <!-- TELÉFONO EN EL FOOTER  -->
+            <p>  Correo electrónico:
+            <br>
+            	sitiostcl12@gmail.com           
+     </p>            
+        </div>
+        
+          <div id="correo-icon_2" >
+		<img src="../../imagenes/email-icon_2.png" id="email-icon_2">
+</div>
+     
+               
+</div><!--CIERRA EL DIV FOOTER   -->
+
+</body><!-- CIERRA EL BODY  -->
+</html><!--CIERRA EL DOCUMENTO HTML   -->

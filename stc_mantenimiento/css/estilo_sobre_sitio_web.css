@@ -1,0 +1,378 @@
+*{
+margin: 0%;
+padding: 0%;
+/*SLIDER*/
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*------------------------------------PÁGINA HOME--------------------------------------------*/
+/*----------------HEADER Y MENÚS----------------------------------------------------------------*/
+div#main_header{
+width: 100%;
+height: 14.5vw;
+background: #FF9100;
+}
+
+img#logo-cdmx{
+float: left;
+width: 18%;
+height: 6%;
+margin-top: 2%;
+margin-left: 2%;
+}
+
+img#logo-metro{
+float: left;
+width: 22%;
+height: 10%;
+margin-top: 2%;
+margin-left: 0%;
+
+}
+
+
+div#titulo_banner_uno{/**/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*TEXTO COLOR BLANCO*/
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 42%;
+	font-size: 4vw;
+	 font-family: sans-serif;
+	font-weight: bolder; 
+	text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.3);
+}
+
+
+div#texto_banner{/**/
+	float: right;
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 75%;
+	font-size: 0.9vw;
+	font-family: sans-serif;
+}
+
+#menu_home{
+	float: left;
+	line-height: 20%;
+margin-left: 40%; 
+margin-top: -5%;
+}
+
+ #menu_home a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.1vw 1vw;
+	line-height: 1.5vw;
+    font-family:  Arial, Helvetica, sans-serif; 
+	font-weight: 300;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition: all 500ms ease;
+
+}
+
+
+ #inicio:hover{
+ color: #f56f3a;
+}
+
+img#home-icon2{
+		float: left;
+	width: 1.5%;
+	height: 1.5vw;
+	position: absolute;
+margin-left: -38%;
+	margin-top: 1%;
+}
+
+#inicio{
+float: left;
+border-right: 1px solid #FFF;    
+margin-left: -37%;
+position: absolute;
+margin-top: 1%;
+font-size: 1.3vw;
+
+}
+
+
+
+
+/*----------------body--------------------------------------------*/
+
+/*PROPIEDADES DEL BODY DEL SITIO WEB*/
+
+div#body{
+    margin: 0 auto;
+	width: 100%;
+	height: 170vh; /*Para conservar el footer hasta abajo de la página*/
+    background: #fff;
+    
+     
+ /*background-position: 54% 35%;
+/*IMAGEN DE FONDO EN EL SITIO WEB*/
+/* background-image: url(imagenes/imagen_fondo.png);
+ background-repeat: no-repeat;
+ background-size: 104vw 143vh;
+ background-position: -3vw -15vh;
+ /*background-position: 54% 35%; 
+*/
+}
+
+
+
+/*EFECTO HOVER EN EL BODY DEL SITIO WEB*/
+
+div#body:hover {
+
+}
+
+
+p#titulo{
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    margin-top: -32%;
+    margin-bottom:  10%;
+    border-bottom-width: 15%;
+    border-bottom: 1px solid #eee;
+    font-size: 2vw;
+    font-weight:700;
+    color: #545454;
+    position: absolute;
+    top: -4%;
+    margin-left: 0.1%;
+    float: center;
+}
+
+img#red{
+   float: left;
+margin-top: -33.6%;
+margin-left: 0.1%; 
+    width: 3vw;
+}
+
+div#informacion{
+    position: absolute;
+    margin-top: 34%;
+    margin-left: 0%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 1.7vw;
+    text-align: justify;
+    color: #545454;
+    font-weight: 300;
+    line-height: 1.428571429;
+    
+}
+
+
+img#metro1{
+    width: 69.4%;
+    height: 28vw;
+    position:absolute;
+    float: center;
+    margin-left: 14%;
+    margin-top: -31%;
+ 
+}
+
+/*----------------FOOTER----------------------------------------------------------------*/
+
+/*PROPIEDADES DEL FOOTER DEL SITIO WEB*/
+
+div#footer{
+	width: 100%;/*ANCHO DE LA PÁGINA*/
+	height: 11vw;/*ALTO*/
+	background: #47484B;/*COLOR DE FONDO*/
+     
+}
+
+
+    hr{
+    position: absolute;
+    margin-left: 68%;
+    height: 11vw;
+    border: 0.1vh  solid;
+    color: #808080;
+}
+
+    hr#hr_2{
+    position: absolute;
+    margin-left: 25%;
+    height: 11vw;
+    border: 0.1vh  solid;
+    color: #808080;
+}
+
+img#logo-metro_2{
+float: left;
+width: 22%;
+height: 10%;
+margin-top: 1%;
+margin-left: 5%;
+
+}
+
+div#sitio_oficial{
+	float: left;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	margin-top: 7%;
+margin-left: 7%;
+ font-size: 1vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 120%;
+    text-decoration:none;
+    }
+
+div#link_oficial a{
+    float: left;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-top: 9%;
+margin-left: -23%;
+ font-size: 0.9vw;
+ position: absolute;
+   font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+    text-decoration:underline;
+    }
+
+div#link_oficial a:hover{
+   color: #f56f3a;
+}
+
+/*LOGO DE MANDO CENTRALIZADO*/
+
+img#mc{
+	float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: 1.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 5%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+    width: 8.7%;
+	height: 10%;
+	
+}
+
+
+/*DIRECCIÓN DEL PCL, EN EL FOOTER*/
+
+div#direccion{
+	float: left;
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-top: 4%;
+	margin-left: 45%;
+	position: absolute;
+	font-size: 0.9vw;
+    font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+      
+}
+
+
+
+div#contacto{
+	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	margin-left: 81.7%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 1%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 1vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 140%;
+    text-decoration:none;
+    }
+
+div#correo{
+    	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-left: 86%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 3.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 0.9vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+	
+    }
+
+img#email-icon{
+	float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: -6.7%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 83.4%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+	height: 2%;
+	width: 2%;
+}
+
+/*TELÉFONO DEL PCL*/
+
+img#phone-icon{
+    float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: -6.7%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 70.3%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+	height: 2%;
+	width: 2%;
+	
+}
+
+div#telefono{
+	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-left: 73%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 3.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 0.9vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+    line-height: 140%;
+    
+    }
+
+div#desarrolladores{
+	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: #FFFF;/*COLOR BLANCO*/
+	margin-left: 78%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 7%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 1vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 140%;
+    text-decoration:none;
+    }
+
+
+div#correo_2{
+    	float: right;/*A LA DERECHA DEL FOOTER*/
+	text-align: center;/*TEXTO CENTRADO*/
+	color: silver;
+	margin-left: 78.6%;/*SEPARACIÓN DEL ARGEN DERECHO DEL FOOTER*/
+ margin-top: 8.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+ font-size: 0.9vw;
+ position: absolute;
+     font-family:  Verdana, Geneva, sans-serif;
+    font-weight: 100;
+	
+    }
+
+img#email-icon_2{
+	float: left;/*A LA IZQUIERDA DEL FOOTER*/
+	margin-top: -1.5%;/*SEPARACIÓN DEL MARGEN DE ARRIBA*/
+	margin-left: 75.5%;/*SEPARACIÓN DEL MARGEN DE LA IZQUIERDA*/
+	height: 2%;
+	width: 2%;
+}
